@@ -1,0 +1,30 @@
+{
+  "root_workflow_uuid": "ed737ea6-9a53-428d-b915-3fb7fbd37255",
+  "workflow_uuid": "ed737ea6-9a53-428d-b915-3fb7fbd37255",
+  "wf_metadata": {
+    "wf.api": "python"
+  },
+  "graph": {
+    "jobs": {
+      "stage_in_remote_local_0_0": {},
+      "stage_out_local_local_2_0": {},
+      "stage_out_local_local_1_0": {},
+      "clean_up_local_level_3_0": {},
+      "stage_out_local_local_0_0": {},
+      "clean_up_local_level_4_0": {},
+      "clean_up_local_level_5_0": {},
+      "clean_up_local_level_6_0": {},
+      "stage_in_local_local_0_0": {},
+      "data_processor_ID0000001": {},
+      "data_processor_ID0000002": {},
+      "data_processor_ID0000003": {},
+      "data_processor_ID0000004": {},
+      "register_local_2_0": {},
+      "register_local_1_0": {},
+      "create_dir_failure-test-workflow_0_local": {},
+      "register_local_0_0": {},
+      "stage_worker_local_failure-test-workflow_0_local": {},
+      "cleanup_failure-test-workflow_0_local": {}
+    }
+  }
+}

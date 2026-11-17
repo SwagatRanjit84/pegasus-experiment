@@ -1,0 +1,66 @@
+---
+pegasus: "5.0"
+sites:
+ -
+  name: "cluster"
+  arch: "x86_64"
+  os.type: "linux"
+  directories:
+   -
+    type: "localStorage"
+    path: "/home/tntech.edu/sranjit42/pegasus/storage"
+    sharedFileSystem: true
+    fileServers:
+     -
+      operation: "all"
+      url: "scp://sranjit42@login.hpc.tntech.edu/home/tntech.edu/sranjit42/pegasus/storage"
+   -
+    type: "sharedScratch"
+    path: "/home/tntech.edu/sranjit42/pegasus/scratch"
+    sharedFileSystem: true
+    fileServers:
+     -
+      operation: "all"
+      url: "scp://sranjit42@login.hpc.tntech.edu/home/tntech.edu/sranjit42/pegasus/scratch"
+  profiles:
+    pegasus:
+      change.dir: "true"
+      data.configuration: "sharedfs"
+      nodes: "1"
+      ppn: "8"
+      project: "csc6740-001-2026f"
+      queue: "hugemem"
+      runtime: "7200"
+      style: "glite"
+ -
+  name: "condorpool"
+  arch: "aarch64"
+  os.type: "linux"
+  profiles:
+    pegasus:
+      style: "condor"
+ -
+  name: "local"
+  arch: "aarch64"
+  os.type: "macosx"
+  directories:
+   -
+    type: "localStorage"
+    path: "/Users/swagatranjit/Music/Research/workflow-different-site-example/output"
+    sharedFileSystem: true
+    fileServers:
+     -
+      operation: "all"
+      url: "file:///Users/swagatranjit/Music/Research/workflow-different-site-example/output"
+   -
+    type: "sharedScratch"
+    path: "/Users/swagatranjit/Music/Research/workflow-different-site-example/scratch"
+    sharedFileSystem: true
+    fileServers:
+     -
+      operation: "all"
+      url: "file:///Users/swagatranjit/Music/Research/workflow-different-site-example/scratch"
+  profiles:
+    env:
+      PATH: "/usr/local/mysql/bin:/Applications/MAMP/bin/php/php5.6.4/bin:/opt/homebrew/opt/postgresql@16/bin:/Users/swagatranjit/.nvm/versions/node/v20.20.2/bin:/Users/swagatranjit/development/apache-maven-3.9.11/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pkg/env/active/bin:/opt/pmk/env/global/bin:/Applications/VMware\
+        \ Fusion.app/Contents/Public:/Users/swagatranjit/mongodb-macos-aarch64--8.0.23/bin"

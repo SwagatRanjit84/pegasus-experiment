@@ -1,0 +1,13 @@
+digraph dag {
+    ratio=fill
+    node [style=filled,color="#444444",fillcolor="#ffed6f"]
+    edge [arrowhead=normal,arrowsize=1.0]
+
+    "cleanup_hello-pegasus_0_local" [shape=ellipse,color="#000000",fillcolor="#1b9e77",label="cleanup_hello-pegasus_0_local"]
+    "create_dir_hello-pegasus_0_local" [shape=ellipse,color="#000000",fillcolor="#d95f02",label="create_dir_hello-pegasus_0_local"]
+    "echo_ID0000001" [shape=ellipse,color="#000000",fillcolor="#7570b3",label="echo_ID0000001"]
+    "stage_worker_local_hello-pegasus_0_local" [shape=ellipse,color="#000000",fillcolor="#e7298a",label="stage_worker_local_hello-pegasus_0_local"]
+    "create_dir_hello-pegasus_0_local" -> "echo_ID0000001" [color="#000000"]
+    "echo_ID0000001" -> "cleanup_hello-pegasus_0_local" [color="#000000"]
+    "stage_worker_local_hello-pegasus_0_local" -> "echo_ID0000001" [color="#000000"]
+}

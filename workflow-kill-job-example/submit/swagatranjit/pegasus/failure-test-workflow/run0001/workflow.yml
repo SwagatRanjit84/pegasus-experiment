@@ -1,0 +1,76 @@
+x-pegasus:
+  apiLang: python
+  createdBy: swagatranjit
+  createdOn: 11-17-26T06:59:48Z
+pegasus: 5.0.4
+name: failure-test-workflow
+jobs:
+- type: job
+  name: data_processor
+  id: ID0000001
+  arguments:
+  - Stage-A
+  - input_data.txt
+  - stage_a_out.txt
+  uses:
+  - lfn: input_data.txt
+    type: input
+  - lfn: stage_a_out.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+- type: job
+  name: data_processor
+  id: ID0000002
+  arguments:
+  - Stage-B
+  - stage_a_out.txt
+  - stage_b_out.txt
+  uses:
+  - lfn: stage_b_out.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+  - lfn: stage_a_out.txt
+    type: input
+- type: job
+  name: data_processor
+  id: ID0000003
+  arguments:
+  - Stage-C
+  - stage_a_out.txt
+  - stage_c_out.txt
+  uses:
+  - lfn: stage_c_out.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+  - lfn: stage_a_out.txt
+    type: input
+- type: job
+  name: data_processor
+  id: ID0000004
+  arguments:
+  - Stage-D
+  - stage_b_out.txt
+  - stage_d_out.txt
+  uses:
+  - lfn: stage_d_out.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+  - lfn: stage_c_out.txt
+    type: input
+  - lfn: stage_b_out.txt
+    type: input
+jobDependencies:
+- id: ID0000001
+  children:
+  - ID0000002
+  - ID0000003
+- id: ID0000002
+  children:
+  - ID0000004
+- id: ID0000003
+  children:
+  - ID0000004

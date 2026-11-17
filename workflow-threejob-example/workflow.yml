@@ -1,0 +1,56 @@
+x-pegasus:
+  apiLang: python
+  createdBy: swagatranjit
+  createdOn: 11-16-26T11:42:52Z
+pegasus: 5.0.4
+name: three-step-pipeline
+jobs:
+- type: job
+  name: data_processor
+  id: ID0000001
+  arguments:
+  - Stage-A
+  - input_data.txt
+  - stage1_output.txt
+  uses:
+  - lfn: stage1_output.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+  - lfn: input_data.txt
+    type: input
+- type: job
+  name: data_processor
+  id: ID0000002
+  arguments:
+  - Stage-B
+  - stage1_output.txt
+  - stage2_output.txt
+  uses:
+  - lfn: stage1_output.txt
+    type: input
+  - lfn: stage2_output.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+- type: job
+  name: data_processor
+  id: ID0000003
+  arguments:
+  - Stage-C
+  - stage2_output.txt
+  - final_output.txt
+  uses:
+  - lfn: final_output.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+  - lfn: stage2_output.txt
+    type: input
+jobDependencies:
+- id: ID0000001
+  children:
+  - ID0000002
+- id: ID0000002
+  children:
+  - ID0000003

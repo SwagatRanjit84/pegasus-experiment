@@ -1,0 +1,8 @@
+Pegasus DAGMAN is /opt/homebrew/lib/pegasus/python/Pegasus/cli/pegasus-dagman.py
+2026-11-17 07:01:01,542:INFO:pegasus-dagman(147): DAGMAN_COPY_TO_SPOOL is set to b'false\n'
+2026-11-17 07:01:01,550:INFO:pegasus-dagman(103): Launched Dagman with Pid 12624
+2026-11-17 07:01:01,556:INFO:pegasus-dagman(130): Launched Monitord with Pid 12625
+2026-11-17 07:03:09,669:INFO:pegasus-dagman(157): pegasus-dagman caught SIGNAL 30
+Executing condor dagman ... 
+2026-11-17 07:03:16,595:INFO:pegasus-dagman(284): Dagman exited with code 2
+2026-11-17 07:03:16,595:INFO:pegasus-dagman(285): Monitord exited with code 0 with a total of 1 launch attempts on the workflow

@@ -1,0 +1,27 @@
+1794920466 INTERNAL *** MONITORD_STARTED ***
+1794920461 INTERNAL *** DAGMAN_STARTED 148.0 ***
+1794920462 create_dir_failure-test-workflow_0_local SUBMIT 149.0 local - 1
+1794920462 stage_worker_local_failure-test-workflow_0_local SUBMIT 150.0 local - 2
+1794920465 create_dir_failure-test-workflow_0_local EXECUTE 149.0 local - 1
+1794920465 stage_worker_local_failure-test-workflow_0_local EXECUTE 150.0 local - 2
+1794920469 create_dir_failure-test-workflow_0_local JOB_TERMINATED 149.0 local - 1
+1794920472 create_dir_failure-test-workflow_0_local JOB_SUCCESS 0 local - 1
+1794920472 create_dir_failure-test-workflow_0_local POST_SCRIPT_STARTED 149.0 local - 1
+1794920473 create_dir_failure-test-workflow_0_local POST_SCRIPT_TERMINATED 149.0 local - 1
+1794920477 create_dir_failure-test-workflow_0_local POST_SCRIPT_SUCCESS 0 local - 1
+1794920482 stage_worker_local_failure-test-workflow_0_local JOB_TERMINATED 150.0 local - 2
+1794920487 stage_worker_local_failure-test-workflow_0_local JOB_SUCCESS 0 local - 2
+1794920487 stage_worker_local_failure-test-workflow_0_local POST_SCRIPT_STARTED 150.0 local - 2
+1794920487 stage_worker_local_failure-test-workflow_0_local POST_SCRIPT_TERMINATED 150.0 local - 2
+1794920492 stage_worker_local_failure-test-workflow_0_local POST_SCRIPT_SUCCESS 0 local - 2
+1794920497 stage_in_remote_local_0_0 SUBMIT 151.0 local - 3
+1794920497 stage_in_local_local_0_0 SUBMIT 152.0 local - 4
+1794920497 stage_in_local_local_0_0 EXECUTE 152.0 local - 4
+1794920497 stage_in_remote_local_0_0 EXECUTE 151.0 local - 3
+1794920502 stage_in_remote_local_0_0 JOB_TERMINATED 151.0 local - 3
+1794920502 stage_in_remote_local_0_0 JOB_SUCCESS 0 local - 3
+1794920502 stage_in_remote_local_0_0 POST_SCRIPT_STARTED 151.0 local - 3
+1794920503 stage_in_remote_local_0_0 POST_SCRIPT_TERMINATED 151.0 local - 3
+1794920507 stage_in_remote_local_0_0 POST_SCRIPT_SUCCESS 0 local - 3
+1794920589 INTERNAL *** DAGMAN_FINISHED 2 ***
+1794920593 INTERNAL *** MONITORD_FINISHED 0 ***

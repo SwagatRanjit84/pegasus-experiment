@@ -1,0 +1,10 @@
+x-pegasus:
+  apiLang: python
+  createdBy: swagatranjit
+  createdOn: 11-16-26T15:26:53Z
+pegasus: 5.0.4
+replicas:
+- lfn: input_data.txt
+  pfns:
+  - site: local
+    pfn: /Users/swagatranjit/Music/Research/workflow-loop-example/input_data.txt

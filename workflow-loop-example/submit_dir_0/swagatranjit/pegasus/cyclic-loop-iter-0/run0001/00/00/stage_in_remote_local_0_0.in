@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "data_processor",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///Users/swagatranjit/Music/Research/workflow-loop-example/processor.py", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///Users/swagatranjit/Music/Research/workflow-loop-example/wf-scratch/LOCAL/swagatranjit/pegasus/cyclic-loop-iter-0/run0001/./data_processor" }
+   ] }
+]

@@ -1,0 +1,23 @@
+---
+pegasus: "5.0"
+transformations:
+ -
+  name: "data_processor_cluster"
+  sites:
+   -
+    name: "cluster"
+    type: "installed"
+    pfn: "/home/YOUR_USERNAME/three-step-pipeline/processor.py"
+    bypass: false
+    arch: "x86_64"
+    os.type: "linux"
+ -
+  name: "data_processor_local"
+  sites:
+   -
+    name: "local"
+    type: "installed"
+    pfn: "/Users/swagatranjit/Music/Research/workflow-different-site-example/processor.py"
+    bypass: false
+    arch: "aarch64"
+    os.type: "macosx"

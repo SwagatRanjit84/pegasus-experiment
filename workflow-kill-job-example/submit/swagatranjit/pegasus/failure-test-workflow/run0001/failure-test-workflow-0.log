@@ -1,0 +1,67 @@
+000 (149.000.000) 2026-11-17 07:01:02 Job submitted from host: <192.168.1.187:9618?addrs=192.168.1.187-9618+[2600-6c5d-56f0-9cc0-1cb4-74f-86f7-f382]-9618&alias=macbookair.lan&noUDP&sock=schedd_11630_6b57>
+    DAG Node: create_dir_failure-test-workflow_0_local
+    pool:local
+...
+000 (150.000.000) 2026-11-17 07:01:02 Job submitted from host: <192.168.1.187:9618?addrs=192.168.1.187-9618+[2600-6c5d-56f0-9cc0-1cb4-74f-86f7-f382]-9618&alias=macbookair.lan&noUDP&sock=schedd_11630_6b57>
+    DAG Node: stage_worker_local_failure-test-workflow_0_local
+    pool:local
+...
+001 (149.000.000) 2026-11-17 07:01:05 Job executing on host: <192.168.1.187:9618?addrs=192.168.1.187-9618+[2600-6c5d-56f0-9cc0-1cb4-74f-86f7-f382]-9618&alias=macbookair.lan&noUDP&sock=starter_11639_7a72_2>
+...
+001 (150.000.000) 2026-11-17 07:01:05 Job executing on host: <192.168.1.187:9618?addrs=192.168.1.187-9618+[2600-6c5d-56f0-9cc0-1cb4-74f-86f7-f382]-9618&alias=macbookair.lan&noUDP&sock=starter_11639_7a72_3>
+...
+005 (149.000.000) 2026-11-17 07:01:09 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+005 (150.000.000) 2026-11-17 07:01:22 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+000 (151.000.000) 2026-11-17 07:01:37 Job submitted from host: <192.168.1.187:9618?addrs=192.168.1.187-9618+[2600-6c5d-56f0-9cc0-1cb4-74f-86f7-f382]-9618&alias=macbookair.lan&noUDP&sock=schedd_11630_6b57>
+    DAG Node: stage_in_remote_local_0_0
+    pool:local
+...
+000 (152.000.000) 2026-11-17 07:01:37 Job submitted from host: <192.168.1.187:9618?addrs=192.168.1.187-9618+[2600-6c5d-56f0-9cc0-1cb4-74f-86f7-f382]-9618&alias=macbookair.lan&noUDP&sock=schedd_11630_6b57>
+    DAG Node: stage_in_local_local_0_0
+    pool:local
+...
+001 (152.000.000) 2026-11-17 07:01:37 Job executing on host: <192.168.1.187:9618?addrs=192.168.1.187-9618+[2600-6c5d-56f0-9cc0-1cb4-74f-86f7-f382]-9618&alias=macbookair.lan&noUDP&sock=starter_11639_7a72_5>
+...
+001 (151.000.000) 2026-11-17 07:01:37 Job executing on host: <192.168.1.187:9618?addrs=192.168.1.187-9618+[2600-6c5d-56f0-9cc0-1cb4-74f-86f7-f382]-9618&alias=macbookair.lan&noUDP&sock=starter_11639_7a72_4>
+...
+005 (151.000.000) 2026-11-17 07:01:42 Job terminated.
+	(1) Normal termination (return value 0)
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Total Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+	0  -  Total Bytes Sent By Job
+	0  -  Total Bytes Received By Job
+...
+004 (152.000.000) 2026-11-17 07:03:09 Job was evicted.
+	(0) CPU times
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Remote Usage
+		Usr 0 00:00:00, Sys 0 00:00:00  -  Run Local Usage
+	0  -  Run Bytes Sent By Job
+	0  -  Run Bytes Received By Job
+...
+009 (152.000.000) 2026-11-17 07:03:09 Job was aborted.
+	removed because <OtherJobRemoveRequirements = DAGManJobId =?= 148> fired when job (148.0) was removed
+...

@@ -1,0 +1,76 @@
+x-pegasus:
+  apiLang: python
+  createdBy: swagatranjit
+  createdOn: 11-16-26T14:55:04Z
+pegasus: 5.0.4
+name: cyclic-loop-iter-0
+jobs:
+- type: job
+  name: data_processor
+  id: ID0000001
+  arguments:
+  - Stage-A
+  - input_data.txt
+  - stage_a_out_iter_0.txt
+  uses:
+  - lfn: input_data.txt
+    type: input
+  - lfn: stage_a_out_iter_0.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+- type: job
+  name: data_processor
+  id: ID0000002
+  arguments:
+  - Stage-B
+  - stage_a_out_iter_0.txt
+  - stage_b_out_iter_0.txt
+  uses:
+  - lfn: stage_a_out_iter_0.txt
+    type: input
+  - lfn: stage_b_out_iter_0.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+- type: job
+  name: data_processor
+  id: ID0000003
+  arguments:
+  - Stage-C
+  - stage_a_out_iter_0.txt
+  - stage_c_out_iter_0.txt
+  uses:
+  - lfn: stage_c_out_iter_0.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+  - lfn: stage_a_out_iter_0.txt
+    type: input
+- type: job
+  name: data_processor
+  id: ID0000004
+  arguments:
+  - Stage-D
+  - stage_b_out_iter_0.txt
+  - stage_d_out_iter_0.txt
+  uses:
+  - lfn: stage_d_out_iter_0.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+  - lfn: stage_c_out_iter_0.txt
+    type: input
+  - lfn: stage_b_out_iter_0.txt
+    type: input
+jobDependencies:
+- id: ID0000001
+  children:
+  - ID0000003
+  - ID0000002
+- id: ID0000002
+  children:
+  - ID0000004
+- id: ID0000003
+  children:
+  - ID0000004

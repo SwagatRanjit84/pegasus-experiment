@@ -1,0 +1,227 @@
+- invocation: True
+  version: 3.0
+  start: 2026-11-17T07:01:05.541-06:00
+  duration: 17.223
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "failure-test-workflow"
+  wf-stamp: "2026-11-17T06:59:48-06:00"
+  interface: 
+  hostaddr: 0.0.0.0
+  pid: 12687
+  uid: 501
+  user: swagatranjit
+  gid: 20
+  group: staff
+  umask: 0o0022
+  mainjob:
+    start: 2026-11-17T07:01:05.542-06:00
+    duration: 17.201
+    pid: 12688
+    usage:
+      utime: 0.852
+      stime: 0.720
+      maxrss: 20052
+      minflt: 57835
+      majflt: 81
+      nswap: 0
+      inblock: 0
+      outblock: 0
+      msgsnd: 16
+      msgrcv: 1263
+      nsignals: 0
+      nvcsw: 1342
+      nivcsw: 4714
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /opt/homebrew/Cellar/pegasus@5/5.1.3/bin/pegasus-transfer
+      mode: 0o100555
+      size: 2901
+      inode: 198064368
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-11-15T13:54:39-06:00
+      atime: 2026-11-16T08:58:07-06:00
+      ctime: 2026-11-15T13:54:43-06:00
+      uid: 501
+      user: swagatranjit
+      gid: 80
+      group: admin
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  cleanup:
+    start: 2026-11-17T07:01:22.743-06:00
+    duration: 0.020
+    pid: 12785
+    usage:
+      utime: 0.007
+      stime: 0.010
+      maxrss: 3120
+      minflt: 937
+      majflt: 14
+      nswap: 0
+      inblock: 0
+      outblock: 0
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 7
+      nivcsw: 80
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /bin/rm
+      mode: 0o100755
+      size: 119200
+      inode: 1152921500312570758
+      nlink: 2
+      blksize: 4096
+      blocks: 40
+      mtime: 2026-04-06T03:10:57-05:00
+      atime: 2026-04-06T03:10:57-05:00
+      ctime: 2026-04-06T03:10:57-05:00
+      uid: 0
+      user: root
+      gid: 0
+      group: wheel
+    argument_vector:
+      - "-rf"
+      - "stage_worker_local_failure-test-workflow_0_local.out.lof"
+    procs:
+  jobids:
+    condor: 150.0
+  cwd: /Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_12657
+  usage:
+    utime: 0.002
+    stime: 0.004
+    maxrss: 1776
+    minflt: 629
+    majflt: 1
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 4
+    nivcsw: 8
+  machine:
+    page-size: 16384
+    uname_system: darwin
+    uname_nodename: macbookair.lan
+    uname_release: 25.4.0
+    uname_machine: arm64
+    ram_total: 8388608
+    ram_avail: 214000
+    ram_active: 1360224
+    ram_inactive: 1256000
+    ram_wired: 1638640
+    swap_total: 4194304
+    swap_avail: 659584
+    swap_used: 3534720
+    boot: 2026-11-16T19:25:56.002-06:00
+    cpu_count: 8
+    cpu_speed: 0
+    cpu_vendor: 
+    cpu_name: Apple M1
+    load_min1: 4.80
+    load_min5: 4.63
+    load_min15: 5.79
+    proc_total: 391
+    proc_sleeping: 391
+  files:
+    pegasus::worker:
+      error: 2
+      lfn: "pegasus::worker"
+      file_name: pegasus::worker
+    pegasus::worker:
+      error: 2
+      lfn: "pegasus::worker"
+      file_name: pegasus::worker
+    stdin:
+      descriptor_number: 0
+      mode: 0o10660
+      size: 0
+      inode: 1162502265904722107
+      nlink: 0
+      blksize: 16384
+      blocks: 0
+      mtime: 2026-11-17T07:01:05-06:00
+      atime: 2026-11-17T07:01:05-06:00
+      ctime: 2026-11-17T07:01:05-06:00
+      uid: 501
+      user: swagatranjit
+      gid: 20
+      group: staff
+    stdout:
+      temporary_name: /Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_12657/ks.out.45LXgv
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 199158451
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-17T07:01:05-06:00
+      atime: 2026-11-17T07:01:05-06:00
+      ctime: 2026-11-17T07:01:05-06:00
+      uid: 501
+      user: swagatranjit
+      gid: 20
+      group: staff
+    stderr:
+      temporary_name: /Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_12657/ks.err.4pyEzX
+      descriptor: 4
+      mode: 0o100600
+      size: 2523
+      inode: 199158452
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-11-17T07:01:22-06:00
+      atime: 2026-11-17T07:01:05-06:00
+      ctime: 2026-11-17T07:01:22-06:00
+      uid: 501
+      user: swagatranjit
+      gid: 20
+      group: staff
+      data_truncated: false
+      data: |
+        2026-11-17 07:01:06,160    INFO:  Reading URL pairs from stdin
+        2026-11-17 07:01:06,162    INFO:  2 transfers loaded
+        2026-11-17 07:01:06,162    INFO:  PATH=/opt/homebrew/bin:/usr/local/mysql/bin:/Applications/MAMP/bin/php/php5.6.4/bin:/opt/homebrew/opt/postgresql@16/bin:/Users/swagatranjit/.nvm/versions/node/v20.20.2/bin:/Users/swagatranjit/development/apache-maven-3.9.11/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pkg/env/active/bin:/opt/pmk/env/global/bin:/Applications/VMware Fusion.app/Contents/Public:/Users/swagatranjit/mongodb-macos-aarch64--8.0.23/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin
+        2026-11-17 07:01:06,162    INFO:  LD_LIBRARY_PATH=
+        2026-11-17 07:01:07,117    INFO:  --------------------------------------------------------------------------------
+        2026-11-17 07:01:07,117    INFO:  Starting transfers - attempt 1
+        2026-11-17 07:01:09,125    INFO:  Command 'wget' not found in the current environment
+        2026-11-17 07:01:09,421    INFO:  Tool found: curl   Version: 8.7   Path: /usr/bin/curl
+        2026-11-17 07:01:09,422    INFO:  /usr/bin/curl -s -S --fail --insecure --location -o '//Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0001/pegasus-worker-5.1.3-aarch64_rhel_8.tar.gz' 'http://download.pegasus.isi.edu/pegasus/5.1.3/pegasus-worker-5.1.3-aarch64_rhel_8.tar.gz'
+        2026-11-17 07:01:11,124    INFO:  /usr/bin/curl -s -S --fail --insecure --location -o '//Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0001/pegasus-worker-5.1.3-aarch64_rhel_8.tar.gz' 'http://download.pegasus.isi.edu/pegasus/5.1.3/pegasus-worker-5.1.3-aarch64_rhel_8.tar.gz'
+        2026-11-17 07:01:22,727    INFO:  --------------------------------------------------------------------------------
+        2026-11-17 07:01:22,728    INFO:  Stats: Total 2 transfers, 23.7 MB transferred in 17 seconds. Rate: 1.4 MB/s (11.4 Mb/s)
+        2026-11-17 07:01:22,728    INFO:         Between sites pegasus->local : 2 transfers, 23.7 MB transferred in 17 seconds. Rate: 1.4 MB/s (11.4 Mb/s)
+        2026-11-17 07:01:22,728    INFO:  All transfers completed successfully.
+        
+    metadata:
+      temporary_name: /Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_12657/ks.meta.47fOFU
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 199158453
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-17T07:01:05-06:00
+      atime: 2026-11-17T07:01:05-06:00
+      ctime: 2026-11-17T07:01:05-06:00
+      uid: 501
+      user: swagatranjit
+      gid: 20
+      group: staff

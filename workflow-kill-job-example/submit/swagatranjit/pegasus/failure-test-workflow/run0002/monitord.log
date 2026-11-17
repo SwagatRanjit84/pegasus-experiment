@@ -1,0 +1,30 @@
+2026-11-17 07:27:06,258:INFO:pegasus-monitord(65): pegasus-monitord starting - pid 14297 
+2026-11-17 07:27:06,268:INFO:pegasus-monitord(463): Final Command line options are: ['-N', 'failure-test-workflow-0.dag.dagman.out']
+2026-11-17 07:27:06,270:INFO:Pegasus.monitoring.event_output(628): Connecting workflow event sink to sqlite:////Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0002/failure-test-workflow-0.stampede.db
+Database version: '5.1.3' (sqlite:////Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0002/failure-test-workflow-0.stampede.db)
+2026-11-17 07:27:07,113:INFO:Pegasus.monitoring.event_output(702): output type=DB namespace=stampede. name=sqlite:////Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0002/failure-test-workflow-0.stampede.db
+2026-11-17 07:27:07,113:INFO:Pegasus.monitoring.event_output(628): Connecting workflow event sink to sqlite:////Users/swagatranjit/.pegasus/workflow.db
+Database version: '5.1.3' (sqlite:////Users/swagatranjit/.pegasus/workflow.db)
+2026-11-17 07:27:07,649:INFO:Pegasus.monitoring.event_output(702): output type=DB namespace=dashboard. name=sqlite:////Users/swagatranjit/.pegasus/workflow.db
+2026-11-17 07:27:07,650:INFO:pegasus-monitord(1258): monitord started in fast start mode
+2026-11-17 07:27:07,662:INFO:Pegasus.monitoring.workflow(1159): Appending to existing jobstate.log replay_mode 0 previous_processed_line 0
+2026-11-17 07:27:07,662:INFO:Pegasus.monitoring.notifications(472): loading notifications from /Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0002/failure-test-workflow-0.notify
+2026-11-17 07:27:07,663:INFO:Pegasus.monitoring.workflow(204): Parsing DAG file /Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0002/failure-test-workflow-0.dag
+2026-11-17 07:27:07,666:INFO:pegasus-monitord(985): Using DAGMan version 23.1.0 230100
+2026-11-17 07:27:07,666:INFO:pegasus-monitord(962): DAGMan runs at pid 14296
+2026-11-17 07:27:07,668:INFO:pegasus-monitord(968): using dag failure-test-workflow-0.dag
+2026-11-17 07:27:07,668:INFO:Pegasus.monitoring.workflow(810): DAGMan starting with condor id 159.0
+2026-11-17 07:27:07,741:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-11-17 07:27:07,741:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-11-17 07:34:51,277:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-11-17 07:34:51,277:INFO:pegasus-monitord(1067): time stamp format not recognized
+2026-11-17 07:42:12,656:INFO:pegasus-monitord(938): DAGMan failure-test-workflow-0.dag finished with exit code 1
+2026-11-17 07:42:13,670:INFO:pegasus-monitord(1438): workflow /Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0002/failure-test-workflow-0.dag.dagman.out ended
+2026-11-17 07:42:13,672:INFO:Pegasus.monitoring.workflow(1381): recovery file deleted: /Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0002/monitord.recover
+2026-11-17 07:42:13,674:INFO:pegasus-monitord(1676): finishing workflow: /Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0002/failure-test-workflow-0.dag.dagman.out
+2026-11-17 07:42:13,674:INFO:pegasus-monitord(1730): finishing notifications...
+2026-11-17 07:42:13,675:INFO:pegasus-monitord(1738): monitord process 14297 exiting with 0
+2026-11-17 07:42:13,694:INFO:pegasus-monitord(205): DB flushing beginning
+2026-11-17 07:42:13,694:INFO:Pegasus.db.workflow_loader.WorkflowLoader(1244): Executing final flush
+2026-11-17 07:42:13,720:INFO:Pegasus.db.dashboard_loader.DashboardLoader(397): Executing final flush
+2026-11-17 07:42:13,721:INFO:pegasus-monitord(221): DB flushing ended

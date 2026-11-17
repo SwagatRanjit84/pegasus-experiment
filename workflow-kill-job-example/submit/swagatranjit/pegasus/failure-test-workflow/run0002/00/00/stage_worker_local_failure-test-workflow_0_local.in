@@ -1,0 +1,23 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "pegasus::worker",
+   "id": 1,
+   "src_urls": [
+     { "site_label": "pegasus", "url": "http://download.pegasus.isi.edu/pegasus/5.1.3/pegasus-worker-5.1.3-aarch64_rhel_8.tar.gz" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:////Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0002/pegasus-worker-5.1.3-aarch64_rhel_8.tar.gz" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "pegasus::worker",
+   "id": 2,
+   "src_urls": [
+     { "site_label": "pegasus", "url": "http://download.pegasus.isi.edu/pegasus/5.1.3/pegasus-worker-5.1.3-aarch64_rhel_8.tar.gz" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:////Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0002/pegasus-worker-5.1.3-aarch64_rhel_8.tar.gz" }
+   ] }
+]

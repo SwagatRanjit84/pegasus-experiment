@@ -1,0 +1,14 @@
+x-pegasus:
+  apiLang: python
+  createdBy: swagatranjit
+  createdOn: 11-16-26T09:05:29Z
+pegasus: 5.0.4
+name: hello-pegasus
+jobs:
+- type: job
+  name: echo
+  id: ID0000001
+  arguments:
+  - Hello from local HTCondor!
+  uses: []
+jobDependencies: []

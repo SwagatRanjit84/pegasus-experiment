@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "remove",
+    "target": { "site_label": "cluster", "url": "scp://sranjit42@login.hpc.tntech.edu/home/tntech.edu/sranjit42/pegasus/scratch/swagatranjit/pegasus/three-step-pipeline/run0004", "recursive": "True" } }
+]

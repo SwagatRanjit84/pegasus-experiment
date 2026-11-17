@@ -1,0 +1,76 @@
+x-pegasus:
+  apiLang: python
+  createdBy: swagatranjit
+  createdOn: 11-16-26T15:26:53Z
+pegasus: 5.0.4
+name: cyclic-loop-workflow
+jobs:
+- type: job
+  name: data_processor
+  id: ID0000001
+  arguments:
+  - Stage-A
+  - input_data.txt
+  - stage_a_out.txt
+  uses:
+  - lfn: stage_a_out.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+  - lfn: input_data.txt
+    type: input
+- type: job
+  name: data_processor
+  id: ID0000002
+  arguments:
+  - Stage-B
+  - stage_a_out.txt
+  - stage_b_out.txt
+  uses:
+  - lfn: stage_a_out.txt
+    type: input
+  - lfn: stage_b_out.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+- type: job
+  name: data_processor
+  id: ID0000003
+  arguments:
+  - Stage-C
+  - stage_a_out.txt
+  - stage_c_out.txt
+  uses:
+  - lfn: stage_a_out.txt
+    type: input
+  - lfn: stage_c_out.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+- type: job
+  name: data_processor
+  id: ID0000004
+  arguments:
+  - Stage-D
+  - stage_b_out.txt
+  - stage_d_out.txt
+  uses:
+  - lfn: stage_d_out.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+  - lfn: stage_b_out.txt
+    type: input
+  - lfn: stage_c_out.txt
+    type: input
+jobDependencies:
+- id: ID0000001
+  children:
+  - ID0000003
+  - ID0000002
+- id: ID0000002
+  children:
+  - ID0000004
+- id: ID0000003
+  children:
+  - ID0000004

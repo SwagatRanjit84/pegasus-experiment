@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///Users/swagatranjit/Music/Research/workflow-different-site-example/scratch/swagatranjit/pegasus/three-step-pipeline/run0004/./final_output.txt", "recursive": "False" } }
+]

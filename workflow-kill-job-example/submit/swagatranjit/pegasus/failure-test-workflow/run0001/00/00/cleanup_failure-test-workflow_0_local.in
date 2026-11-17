@@ -1,0 +1,6 @@
+[
+  {
+    "id": 1,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/wf-scratch/LOCAL/swagatranjit/pegasus/failure-test-workflow/run0001", "recursive": "True" } }
+]

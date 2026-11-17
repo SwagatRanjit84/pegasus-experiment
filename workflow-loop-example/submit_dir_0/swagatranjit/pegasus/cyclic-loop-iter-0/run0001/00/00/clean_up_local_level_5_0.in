@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///Users/swagatranjit/Music/Research/workflow-loop-example/wf-scratch/LOCAL/swagatranjit/pegasus/cyclic-loop-iter-0/run0001/./data_processor", "recursive": "False" } }
+  ,
+  {
+    "id": 2,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///Users/swagatranjit/Music/Research/workflow-loop-example/wf-scratch/LOCAL/swagatranjit/pegasus/cyclic-loop-iter-0/run0001/./stage_b_out_iter_0.txt", "recursive": "False" } }
+  ,
+  {
+    "id": 3,
+    "type": "remove",
+    "target": { "site_label": "local", "url": "file:///Users/swagatranjit/Music/Research/workflow-loop-example/wf-scratch/LOCAL/swagatranjit/pegasus/cyclic-loop-iter-0/run0001/./stage_c_out_iter_0.txt", "recursive": "False" } }
+]

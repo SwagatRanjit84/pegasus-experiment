@@ -1,0 +1,10 @@
+x-pegasus:
+  apiLang: python
+  createdBy: swagatranjit
+  createdOn: 11-17-26T06:59:48Z
+pegasus: 5.0.4
+replicas:
+- lfn: input_data.txt
+  pfns:
+  - site: local
+    pfn: /Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/input_data.txt

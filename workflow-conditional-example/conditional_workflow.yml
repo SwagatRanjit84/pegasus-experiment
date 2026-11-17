@@ -1,0 +1,58 @@
+x-pegasus:
+  apiLang: python
+  createdBy: swagatranjit
+  createdOn: 11-16-26T14:59:11Z
+pegasus: 5.0.4
+name: conditional-branch-pipeline
+jobs:
+- type: job
+  name: router_task
+  id: ID0000001
+  arguments:
+  - input_data.txt
+  - high_branch_input.txt
+  - low_branch_input.txt
+  uses:
+  - lfn: input_data.txt
+    type: input
+  - lfn: high_branch_input.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+  - lfn: low_branch_input.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+- type: job
+  name: branch_task
+  id: ID0000002
+  arguments:
+  - HIGH
+  - high_branch_input.txt
+  - high_branch_output.txt
+  uses:
+  - lfn: high_branch_output.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+  - lfn: high_branch_input.txt
+    type: input
+- type: job
+  name: branch_task
+  id: ID0000003
+  arguments:
+  - LOW
+  - low_branch_input.txt
+  - low_branch_output.txt
+  uses:
+  - lfn: low_branch_output.txt
+    type: output
+    stageOut: true
+    registerReplica: true
+  - lfn: low_branch_input.txt
+    type: input
+jobDependencies:
+- id: ID0000001
+  children:
+  - ID0000003
+  - ID0000002

@@ -1,0 +1,12 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "pegasus::worker",
+   "id": 1,
+   "src_urls": [
+     { "site_label": "pegasus", "url": "http://download.pegasus.isi.edu/pegasus/5.1.3/pegasus-worker-5.1.3-x86_64_rhel_8.tar.gz" }
+   ],
+   "dest_urls": [
+     { "site_label": "cluster", "url": "scp://sranjit42@login.hpc.tntech.edu/home/tntech.edu/sranjit42/pegasus/scratch/swagatranjit/pegasus/three-step-pipeline/run0004/pegasus-worker-5.1.3-x86_64_rhel_8.tar.gz" }
+   ] }
+]

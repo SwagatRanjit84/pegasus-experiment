@@ -1,0 +1,30 @@
+{
+  "root_workflow_uuid": "ba81fde4-70b0-44f1-a3d3-c5560d63ee46",
+  "workflow_uuid": "ba81fde4-70b0-44f1-a3d3-c5560d63ee46",
+  "wf_metadata": {
+    "wf.api": "python"
+  },
+  "graph": {
+    "jobs": {
+      "stage_in_remote_local_0_0": {},
+      "cleanup_cyclic-loop-iter-0_0_local": {},
+      "stage_out_local_local_2_0": {},
+      "stage_out_local_local_1_0": {},
+      "clean_up_local_level_3_0": {},
+      "stage_out_local_local_0_0": {},
+      "clean_up_local_level_4_0": {},
+      "clean_up_local_level_5_0": {},
+      "clean_up_local_level_6_0": {},
+      "stage_in_local_local_0_0": {},
+      "create_dir_cyclic-loop-iter-0_0_local": {},
+      "stage_worker_local_cyclic-loop-iter-0_0_local": {},
+      "data_processor_ID0000001": {},
+      "data_processor_ID0000002": {},
+      "data_processor_ID0000003": {},
+      "data_processor_ID0000004": {},
+      "register_local_2_0": {},
+      "register_local_1_0": {},
+      "register_local_0_0": {}
+    }
+  }
+}

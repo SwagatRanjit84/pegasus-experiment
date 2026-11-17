@@ -1,0 +1,46 @@
+######################################################################
+# PEGASUS WMS GENERATED SUBMIT FILE
+# DAG : hello-pegasus, Index = 0, Count = null
+# SUBMIT FILE NAME : echo_ID0000001.sub
+######################################################################
+stream_error  = false
+stream_output = false
+environment = "LANG=en_US.UTF-8 PEGASUS_HOME=/opt/homebrew PATH='/usr/local/mysql/bin:/Applications/MAMP/bin/php/php5.6.4/bin:/opt/homebrew/opt/postgresql@16/bin:/Users/swagatranjit/.nvm/versions/node/v20.20.2/bin:/Users/swagatranjit/development/apache-maven-3.9.11/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pkg/env/active/bin:/opt/pmk/env/global/bin:/Applications/VMware Fusion.app/Contents/Public:/Users/swagatranjit/mongodb-macos-aarch64--8.0.23/bin' CONDOR_JOBID=$(cluster).$(process) PEGASUS_WF_UUID=734102ea-c74d-418a-b467-c7c7538228dc PEGASUS_WF_LABEL=hello-pegasus PEGASUS_DAG_JOB_ID=echo_ID0000001 PEGASUS_SITE=local _PEGASUS_WF_SUBMIT_DIR=/Users/swagatranjit/Music/Research/submit/swagatranjit/pegasus/hello-pegasus/run0001 _PEGASUS_INITIAL_DIR=/Users/swagatranjit/Music/Research/wf-scratch/LOCAL/swagatranjit/pegasus/hello-pegasus/run0001 _PEGASUS_TRANSFER_INPUT_FILES=$(wf_submit_dir)/pegasus-lite-common.sh, PEGASUS_BIN_DIR=/opt/homebrew/bin"
+arguments = "/Users/swagatranjit/Music/Research/submit/swagatranjit/pegasus/hello-pegasus/run0001/00/00/echo_ID0000001.sh "
+error = /Users/swagatranjit/Music/Research/submit/swagatranjit/pegasus/hello-pegasus/run0001//00/00/echo_ID0000001.err
+executable = /opt/homebrew/share/pegasus/sh/pegasus-lite-local.sh
+initialdir = /Users/swagatranjit/Music/Research/wf-scratch/LOCAL/swagatranjit/pegasus/hello-pegasus/run0001
+log = /Users/swagatranjit/Music/Research/submit/swagatranjit/pegasus/hello-pegasus/run0001/hello-pegasus-0.log
+notification = NEVER
+output = /Users/swagatranjit/Music/Research/submit/swagatranjit/pegasus/hello-pegasus/run0001//00/00/echo_ID0000001.out
+periodic_release = False
+periodic_remove = (JobStatus == 5) && ((CurrentTime - EnteredCurrentStatus) > 1800)
+priority = 10
+request_cpus = $(pegasus_cores)
+request_disk = $(pegasus_diskspace_mb) MB
+request_memory = $(pegasus_memory_mb) MB
+submit_event_user_notes = pool:local
+transfer_executable = false
+universe = local
+wf_submit_dir = /Users/swagatranjit/Music/Research/submit/swagatranjit/pegasus/hello-pegasus/run0001
+pegasus_job_runtime = 0
+pegasus_cores = 1
+pegasus_gpus = 0
+pegasus_memory_mb = 2048
+pegasus_diskspace_mb = 5120
++pegasus_generator = "Pegasus"
++pegasus_root_wf_uuid = "734102ea-c74d-418a-b467-c7c7538228dc"
++pegasus_wf_uuid = "734102ea-c74d-418a-b467-c7c7538228dc"
++pegasus_version = "5.1.3"
++pegasus_wf_name = "hello-pegasus-0"
++pegasus_wf_time = "20261116T091322-0600"
++pegasus_wf_xformation = "echo"
++pegasus_wf_dax_job_id = "ID0000001"
++pegasus_wf_dag_job_id = "echo_ID0000001"
++pegasus_job_class = 1
++pegasus_site = "local"
++pegasus_cluster_size = 1
+queue
+######################################################################
+# END OF SUBMIT FILE
+######################################################################

@@ -1,0 +1,8 @@
+ts=1970-01-01T04:07:48.187671Z event=task.info xwf.id=8edb9df4-e234-4592-8130-fb8a0692e670 task.id="ID0000002" type="1" type_desc="compute" transformation="data_processor_cluster" argv="Stage-B stage1_output.txt stage2_output.txt" 
+ts=1970-01-01T04:07:48.187946Z event=task.info xwf.id=8edb9df4-e234-4592-8130-fb8a0692e670 task.id="ID0000003" type="1" type_desc="compute" transformation="data_processor_local" argv="Stage-C stage2_output.txt final_output.txt" 
+ts=1970-01-01T04:07:48.188040Z event=task.info xwf.id=8edb9df4-e234-4592-8130-fb8a0692e670 task.id="ID0000001" type="1" type_desc="compute" transformation="data_processor_local" argv="Stage-A input_data.txt stage1_output.txt" 
+ts=1970-01-01T04:07:48.188147Z event=task.edge xwf.id=8edb9df4-e234-4592-8130-fb8a0692e670 parent.task.id="ID0000002" child.task.id="ID0000003" 
+ts=1970-01-01T04:07:48.188233Z event=task.edge xwf.id=8edb9df4-e234-4592-8130-fb8a0692e670 parent.task.id="ID0000001" child.task.id="ID0000002" 
+ts=1970-01-01T04:07:48.229735Z event=static.meta.start xwf.id=8edb9df4-e234-4592-8130-fb8a0692e670 
+ts=1970-01-01T04:07:48.229838Z event=xwf.meta xwf.id=8edb9df4-e234-4592-8130-fb8a0692e670 key="wf.api" value="python" 
+ts=1970-01-01T04:07:48.229915Z event=static.meta.end xwf.id=8edb9df4-e234-4592-8130-fb8a0692e670 

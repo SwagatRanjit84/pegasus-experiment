@@ -1,0 +1,13 @@
+---
+pegasus: "5.0"
+transformations:
+ -
+  name: "echo"
+  sites:
+   -
+    name: "local"
+    type: "installed"
+    pfn: "/bin/echo"
+    bypass: false
+    arch: "aarch64"
+    os.type: "linux"

@@ -1,0 +1,25 @@
+[
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "stage_b_out.txt",
+   "id": 1,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/wf-scratch/LOCAL/swagatranjit/pegasus/failure-test-workflow/run0001/./stage_b_out.txt" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/output/stage_b_out.txt" }
+   ] }
+ ,
+ { "type": "transfer",
+   "linkage": "output",
+   "lfn": "stage_c_out.txt",
+   "id": 2,
+   "verify_checksum_remote": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/wf-scratch/LOCAL/swagatranjit/pegasus/failure-test-workflow/run0001/./stage_c_out.txt" }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/output/stage_c_out.txt" }
+   ] }
+]

@@ -1,0 +1,13 @@
+---
+pegasus: "5.0"
+transformations:
+ -
+  name: "data_processor"
+  sites:
+   -
+    name: "local"
+    type: "stageable"
+    pfn: "file:///Users/swagatranjit/Music/Research/workflow-loop-example/processor.py"
+    bypass: false
+    arch: "aarch64"
+    os.type: "linux"

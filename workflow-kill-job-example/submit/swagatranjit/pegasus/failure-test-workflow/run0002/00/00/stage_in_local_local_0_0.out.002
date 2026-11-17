@@ -1,0 +1,299 @@
+- invocation: True
+  version: 3.0
+  start: 2026-11-17T07:27:10.738-06:00
+  duration: 446.347
+  transformation: "pegasus::transfer"
+  derivation: "null"
+  resource: "local"
+  wf-label: "failure-test-workflow"
+  wf-stamp: "2026-11-17T06:59:48-06:00"
+  interface: 
+  hostaddr: 0.0.0.0
+  pid: 14355
+  uid: 501
+  user: swagatranjit
+  gid: 20
+  group: staff
+  umask: 0o0022
+  mainjob:
+    start: 2026-11-17T07:27:10.739-06:00
+    duration: 445.542
+    pid: 14356
+    usage:
+      utime: 0.687
+      stime: 0.397
+      maxrss: 17684
+      minflt: 46163
+      majflt: 168
+      nswap: 0
+      inblock: 0
+      outblock: 0
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 184
+      nivcsw: 8067
+    status:
+      raw: 256
+      regular_exitcode: 1
+    executable:
+      file_name: /opt/homebrew/Cellar/pegasus@5/5.1.3/bin/pegasus-transfer
+      mode: 0o100555
+      size: 2901
+      inode: 198064368
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-11-15T13:54:39-06:00
+      atime: 2026-11-16T08:58:07-06:00
+      ctime: 2026-11-15T13:54:43-06:00
+      uid: 501
+      user: swagatranjit
+      gid: 80
+      group: admin
+    argument_vector:
+      - "--threads"
+      - "2"
+    procs:
+  cleanup:
+    start: 2026-11-17T07:34:36.283-06:00
+    duration: 0.802
+    pid: 14570
+    usage:
+      utime: 0.009
+      stime: 0.404
+      maxrss: 3096
+      minflt: 2724
+      majflt: 4481
+      nswap: 0
+      inblock: 0
+      outblock: 0
+      msgsnd: 0
+      msgrcv: 0
+      nsignals: 0
+      nvcsw: 2102
+      nivcsw: 1899
+    status:
+      raw: 0
+      regular_exitcode: 0
+    executable:
+      file_name: /bin/rm
+      mode: 0o100755
+      size: 119200
+      inode: 1152921500312570758
+      nlink: 2
+      blksize: 4096
+      blocks: 40
+      mtime: 2026-04-06T03:10:57-05:00
+      atime: 2026-04-06T03:10:57-05:00
+      ctime: 2026-04-06T03:10:57-05:00
+      uid: 0
+      user: root
+      gid: 0
+      group: wheel
+    argument_vector:
+      - "-rf"
+      - "stage_in_local_local_0_0.out.lof"
+    procs:
+  jobids:
+    condor: 160.0
+  cwd: /Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_14350
+  usage:
+    utime: 0.002
+    stime: 0.005
+    maxrss: 1840
+    minflt: 617
+    majflt: 22
+    nswap: 0
+    inblock: 0
+    outblock: 0
+    msgsnd: 0
+    msgrcv: 0
+    nsignals: 0
+    nvcsw: 20
+    nivcsw: 23
+  machine:
+    page-size: 16384
+    uname_system: darwin
+    uname_nodename: macbookair.lan
+    uname_release: 25.4.0
+    uname_machine: arm64
+    ram_total: 8388608
+    ram_avail: 108032
+    ram_active: 1652720
+    ram_inactive: 1590112
+    ram_wired: 1489584
+    swap_total: 5242880
+    swap_avail: 839424
+    swap_used: 4403456
+    boot: 2026-11-16T19:25:56.002-06:00
+    cpu_count: 8
+    cpu_speed: 0
+    cpu_vendor: 
+    cpu_name: Apple M1
+    load_min1: 3.20
+    load_min5: 3.27
+    load_min15: 3.85
+    proc_total: 486
+    proc_sleeping: 486
+  files:
+    input_data.txt:
+      error: 2
+      lfn: "input_data.txt"
+      file_name: input_data.txt
+    stdin:
+      descriptor_number: 0
+      mode: 0o10660
+      size: 0
+      inode: 15887249690497707140
+      nlink: 0
+      blksize: 16384
+      blocks: 0
+      mtime: 2026-11-17T07:27:10-06:00
+      atime: 2026-11-17T07:27:10-06:00
+      ctime: 2026-11-17T07:27:10-06:00
+      uid: 501
+      user: swagatranjit
+      gid: 20
+      group: staff
+    stdout:
+      temporary_name: /Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_14350/ks.out.IjlGsM
+      descriptor: 3
+      mode: 0o100600
+      size: 0
+      inode: 199165420
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-17T07:27:10-06:00
+      atime: 2026-11-17T07:27:10-06:00
+      ctime: 2026-11-17T07:27:10-06:00
+      uid: 501
+      user: swagatranjit
+      gid: 20
+      group: staff
+    stderr:
+      temporary_name: /Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_14350/ks.err.eju8RK
+      descriptor: 4
+      mode: 0o100600
+      size: 2479
+      inode: 199165421
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-11-17T07:34:36-06:00
+      atime: 2026-11-17T07:27:10-06:00
+      ctime: 2026-11-17T07:34:36-06:00
+      uid: 501
+      user: swagatranjit
+      gid: 20
+      group: staff
+      data_truncated: false
+      data: |
+        2026-11-17 07:27:11,027    INFO:  Reading URL pairs from stdin
+        2026-11-17 07:27:11,028    INFO:  1 transfers loaded
+        2026-11-17 07:27:11,028    INFO:  PATH=/opt/homebrew/bin:/usr/local/mysql/bin:/Applications/MAMP/bin/php/php5.6.4/bin:/opt/homebrew/opt/postgresql@16/bin:/Users/swagatranjit/.nvm/versions/node/v20.20.2/bin:/Users/swagatranjit/development/apache-maven-3.9.11/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pkg/env/active/bin:/opt/pmk/env/global/bin:/Applications/VMware Fusion.app/Contents/Public:/Users/swagatranjit/mongodb-macos-aarch64--8.0.23/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin
+        2026-11-17 07:27:11,028    INFO:  LD_LIBRARY_PATH=
+        2026-11-17 07:27:12,179    INFO:  --------------------------------------------------------------------------------
+        2026-11-17 07:27:12,180    INFO:  Starting transfers - attempt 1
+        2026-11-17 07:27:14,187   ERROR:  Expected local file does not exist: /Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/input_data.txt
+        2026-11-17 07:29:32,195    INFO:  --------------------------------------------------------------------------------
+        2026-11-17 07:29:32,201    INFO:  Starting transfers - attempt 2
+        2026-11-17 07:29:34,208   ERROR:  Expected local file does not exist: /Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/input_data.txt
+        2026-11-17 07:34:34,208    INFO:  --------------------------------------------------------------------------------
+        2026-11-17 07:34:34,214    INFO:  Starting transfers - attempt 3
+        2026-11-17 07:34:36,218   ERROR:  Expected local file does not exist: /Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/input_data.txt
+        2026-11-17 07:34:36,221    INFO:  --------------------------------------------------------------------------------
+        2026-11-17 07:34:36,223    INFO:  Stats: Total 3 transfers, 0.0 B transferred in 445 seconds. Rate: 0.0 B/s (0.0 b/s)
+        2026-11-17 07:34:36,224    INFO:         Between sites local->local : 3 transfers, 0.0 B transferred in 445 seconds. Rate: 0.0 B/s (0.0 b/s)
+        2026-11-17 07:34:36,224 CRITICAL:  Some transfers failed! See above, and possibly stderr.
+        
+    metadata:
+      temporary_name: /Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_14350/ks.meta.lwX7xw
+      descriptor: 5
+      mode: 0o100600
+      size: 0
+      inode: 199165422
+      nlink: 1
+      blksize: 4096
+      blocks: 0
+      mtime: 2026-11-17T07:27:10-06:00
+      atime: 2026-11-17T07:27:10-06:00
+      ctime: 2026-11-17T07:27:10-06:00
+      uid: 501
+      user: swagatranjit
+      gid: 20
+      group: staff
+    kickstart:
+      error: 2
+      note: ignore error - it is just a warning
+      file_name: pegasus-kickstart
+    logfile:
+      descriptor_number: 1
+      mode: 0o100644
+      size: 4096
+      inode: 199165415
+      nlink: 1
+      blksize: 4096
+      blocks: 8
+      mtime: 2026-11-17T07:34:37-06:00
+      atime: 2026-11-17T07:27:10-06:00
+      ctime: 2026-11-17T07:34:37-06:00
+      uid: 501
+      user: swagatranjit
+      gid: 20
+      group: staff
+  environment:
+    "BATCH_SYSTEM": "HTCondor"
+    "CONDOR_JOBID": "160.0"
+    "GRIDSTART_CLEANUP": "/bin/rm -rf stage_in_local_local_0_0.out.lof "
+    "KICKSTART_INTEGRITY_DATA": "/Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_14350/ks.integrity.07lHSm"
+    "KICKSTART_METADATA": "/Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_14350/ks.meta.lwX7xw"
+    "LANG": "en_US.UTF-8"
+    "OLDPWD": "/Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0002"
+    "PATH": "/opt/homebrew/bin:/usr/local/mysql/bin:/Applications/MAMP/bin/php/php5.6.4/bin:/opt/homebrew/opt/postgresql@16/bin:/Users/swagatranjit/.nvm/versions/node/v20.20.2/bin:/Users/swagatranjit/development/apache-maven-3.9.11/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pkg/env/active/bin:/opt/pmk/env/global/bin:/Applications/VMware Fusion.app/Contents/Public:/Users/swagatranjit/mongodb-macos-aarch64--8.0.23/bin:/bin:/usr/bin:/usr/local/bin:/opt/local/bin"
+    "PEGASUS_BIN_DIR": "/opt/homebrew/bin"
+    "PEGASUS_DAG_JOB_ID": "stage_in_local_local_0_0"
+    "PEGASUS_HOME": "/opt/homebrew"
+    "PEGASUS_SITE": "local"
+    "PEGASUS_WF_LABEL": "failure-test-workflow"
+    "PEGASUS_WF_UUID": "ed737ea6-9a53-428d-b915-3fb7fbd37255"
+    "PWD": "/Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_14350"
+    "SHLVL": "1"
+    "TEMP": "/Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_14350"
+    "TMP": "/Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_14350"
+    "TMPDIR": "/Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_14350"
+    "_": "/opt/homebrew/bin/pegasus-kickstart"
+    "_CHIRP_DELAYED_UPDATE_PREFIX": "Chirp*"
+    "_CONDOR_ANCESTOR_11630": "11639:1794919514:1385486278"
+    "_CONDOR_ANCESTOR_11639": "14350:1794922030:1594891932"
+    "_CONDOR_ANCESTOR_14350": "14352:1794922030:1217628613"
+    "_CONDOR_BIN": "/opt/homebrew/opt/htcondor@23/bin"
+    "_CONDOR_JOB_AD": "/Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_14350/.job.ad"
+    "_CONDOR_JOB_IWD": "/Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0002"
+    "_CONDOR_JOB_PIDS": ""
+    "_CONDOR_MACHINE_AD": "/Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_14350/.machine.ad"
+    "_CONDOR_SCRATCH_DIR": "/Users/swagatranjit/.condor/local/spool/local_univ_execute/dir_14350"
+    "_CONDOR_SLOT": ""
+    "_PEGASUS_CONNECT_STDIN": "true"
+    "_PEGASUS_TRANSFER_INPUT_FILES": "/Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0002/00/00/stage_in_local_local_0_0.out.lof,"
+    "_PEGASUS_WF_SUBMIT_DIR": "/Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/submit/swagatranjit/pegasus/failure-test-workflow/run0002"
+  limits:
+    RLIMIT_CPU_soft: unlimited
+    RLIMIT_CPU_hard: unlimited
+    RLIMIT_FSIZE_soft: unlimited
+    RLIMIT_FSIZE_hard: unlimited
+    RLIMIT_DATA_soft: unlimited
+    RLIMIT_DATA_hard: unlimited
+    RLIMIT_STACK_soft: 8372224
+    RLIMIT_STACK_hard: 67092480
+    RLIMIT_CORE_soft: 0
+    RLIMIT_CORE_hard: 0
+    RLIMIT_AS_soft: unlimited
+    RLIMIT_AS_hard: unlimited
+    RLIMIT_MEMLOCK_soft: unlimited
+    RLIMIT_MEMLOCK_hard: unlimited
+    RLIMIT_NPROC_soft: 1333
+    RLIMIT_NPROC_hard: 2000
+    RLIMIT_NOFILE_soft: 20000
+    RLIMIT_NOFILE_hard: 20000

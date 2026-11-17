@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "data_processor",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "file:///Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/processor.py", "priority": 100 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/wf-scratch/LOCAL/swagatranjit/pegasus/failure-test-workflow/run0002/./data_processor" }
+   ] }
+]

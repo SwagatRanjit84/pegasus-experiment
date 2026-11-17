@@ -1,0 +1,2 @@
+stage_b_out.txt file:///Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/output/stage_b_out.txt site="local"
+stage_c_out.txt file:///Users/swagatranjit/Music/Research/pegasus/workflow-kill-job-example/output/stage_c_out.txt site="local"

@@ -1,0 +1,15 @@
+{
+  "root_workflow_uuid": "734102ea-c74d-418a-b467-c7c7538228dc",
+  "workflow_uuid": "734102ea-c74d-418a-b467-c7c7538228dc",
+  "wf_metadata": {
+    "wf.api": "python"
+  },
+  "graph": {
+    "jobs": {
+      "create_dir_hello-pegasus_0_local": {},
+      "stage_worker_local_hello-pegasus_0_local": {},
+      "echo_ID0000001": {},
+      "cleanup_hello-pegasus_0_local": {}
+    }
+  }
+}

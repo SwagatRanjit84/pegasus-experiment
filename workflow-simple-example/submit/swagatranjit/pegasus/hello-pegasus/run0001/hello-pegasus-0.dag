@@ -1,0 +1,41 @@
+######################################################################
+# PEGASUS WMS GENERATED DAG FILE
+# DAG hello-pegasus
+# Index = 0, Count = null
+######################################################################
+MAXJOBS cleanup 4
+MAXJOBS registration 1
+MAXJOBS stageout 10
+MAXJOBS stagein 10
+
+JOB create_dir_hello-pegasus_0_local 00/00/create_dir_hello-pegasus_0_local.sub
+SCRIPT POST create_dir_hello-pegasus_0_local /opt/homebrew/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l hello-pegasus-0.exitcode.log -M hello-pegasus-0.cache.meta   .//00/00/create_dir_hello-pegasus_0_local.out
+PRIORITY create_dir_hello-pegasus_0_local 800
+RETRY create_dir_hello-pegasus_0_local 1
+VARS create_dir_hello-pegasus_0_local My.DAGNodeRetry="$(RETRY)"
+
+JOB stage_worker_local_hello-pegasus_0_local 00/00/stage_worker_local_hello-pegasus_0_local.sub
+SCRIPT POST stage_worker_local_hello-pegasus_0_local /opt/homebrew/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l hello-pegasus-0.exitcode.log -M hello-pegasus-0.cache.meta   .//00/00/stage_worker_local_hello-pegasus_0_local.out
+PRIORITY stage_worker_local_hello-pegasus_0_local 700
+RETRY stage_worker_local_hello-pegasus_0_local 1
+CATEGORY stage_worker_local_hello-pegasus_0_local stagein
+VARS stage_worker_local_hello-pegasus_0_local My.DAGNodeRetry="$(RETRY)"
+
+JOB echo_ID0000001 00/00/echo_ID0000001.sub
+SCRIPT POST echo_ID0000001 /opt/homebrew/bin/pegasus-exitcode  -r $RETURN -R $RETRY -s PegasusLite:+exitcode+0 -l hello-pegasus-0.exitcode.log -M hello-pegasus-0.cache.meta   .//00/00/echo_ID0000001.out
+PRIORITY echo_ID0000001 10
+RETRY echo_ID0000001 1
+VARS echo_ID0000001 My.DAGNodeRetry="$(RETRY)"
+
+JOB cleanup_hello-pegasus_0_local 00/00/cleanup_hello-pegasus_0_local.sub
+SCRIPT POST cleanup_hello-pegasus_0_local /opt/homebrew/bin/pegasus-exitcode  -r $RETURN -R $RETRY -l hello-pegasus-0.exitcode.log -M hello-pegasus-0.cache.meta   .//00/00/cleanup_hello-pegasus_0_local.out
+PRIORITY cleanup_hello-pegasus_0_local 1000
+RETRY cleanup_hello-pegasus_0_local 1
+VARS cleanup_hello-pegasus_0_local My.DAGNodeRetry="$(RETRY)"
+
+PARENT  create_dir_hello-pegasus_0_local CHILD echo_ID0000001
+PARENT  stage_worker_local_hello-pegasus_0_local CHILD echo_ID0000001
+PARENT  echo_ID0000001 CHILD cleanup_hello-pegasus_0_local
+######################################################################
+# End of DAG
+######################################################################

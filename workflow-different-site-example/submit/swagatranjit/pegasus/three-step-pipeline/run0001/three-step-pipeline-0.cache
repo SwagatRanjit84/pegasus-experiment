@@ -1,0 +1,6 @@
+input_data.txt file:///Users/swagatranjit/Music/Research/workflow-different-site-example/scratch/swagatranjit/pegasus/three-step-pipeline/run0001/./input_data.txt site="local"
+stage1_output.txt file:///Users/swagatranjit/Music/Research/workflow-different-site-example/scratch/swagatranjit/pegasus/three-step-pipeline/run0001/./stage1_output.txt site="local"
+stage1_output.txt scp://sranjit42@login.hpc.tntech.edu/home/tntech.edu/sranjit42/pegasus/scratch/swagatranjit/pegasus/three-step-pipeline/run0001/./stage1_output.txt site="cluster"
+stage2_output.txt scp://sranjit42@login.hpc.tntech.edu/home/tntech.edu/sranjit42/pegasus/scratch/swagatranjit/pegasus/three-step-pipeline/run0001/./stage2_output.txt site="cluster"
+stage2_output.txt file:///Users/swagatranjit/Music/Research/workflow-different-site-example/scratch/swagatranjit/pegasus/three-step-pipeline/run0001/./stage2_output.txt site="local"
+final_output.txt file:///Users/swagatranjit/Music/Research/workflow-different-site-example/scratch/swagatranjit/pegasus/three-step-pipeline/run0001/./final_output.txt site="local"

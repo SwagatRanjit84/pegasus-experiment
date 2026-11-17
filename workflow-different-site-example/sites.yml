@@ -1,0 +1,47 @@
+x-pegasus:
+  apiLang: python
+  createdBy: swagatranjit
+  createdOn: 11-16-26T18:36:24Z
+pegasus: 5.0.4
+sites:
+- name: local
+  arch: aarch64
+  os.type: macosx
+  directories:
+  - type: sharedScratch
+    path: /Users/swagatranjit/Music/Research/workflow-different-site-example/scratch
+    sharedFileSystem: true
+    fileServers:
+    - url: file:///Users/swagatranjit/Music/Research/workflow-different-site-example/scratch
+      operation: all
+  - type: localStorage
+    path: /Users/swagatranjit/Music/Research/workflow-different-site-example/storage
+    sharedFileSystem: true
+    fileServers:
+    - url: file:///Users/swagatranjit/Music/Research/workflow-different-site-example/storage
+      operation: all
+- name: cluster
+  arch: x86_64
+  os.type: linux
+  directories:
+  - type: sharedScratch
+    path: /home/tntech.edu/sranjit42/pegasus/scratch
+    sharedFileSystem: true
+    fileServers:
+    - url: scp://sranjit42@login.hpc.tntech.edu/home/tntech.edu/sranjit42/pegasus/scratch
+      operation: all
+  - type: localStorage
+    path: /home/tntech.edu/sranjit42/pegasus/storage
+    sharedFileSystem: true
+    fileServers:
+    - url: scp://sranjit42@login.hpc.tntech.edu/home/tntech.edu/sranjit42/pegasus/storage
+      operation: all
+  profiles:
+    pegasus:
+      style: glite
+      queue: hugemem
+      project: csc6740-001-2026f
+      nodes: '1'
+      ppn: '8'
+      runtime: '7200'
+      data.configuration: sharedfs

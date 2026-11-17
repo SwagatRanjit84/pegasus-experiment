@@ -1,0 +1,20 @@
+x-pegasus:
+  apiLang: python
+  createdBy: swagatranjit
+  createdOn: 11-16-26T12:35:19Z
+pegasus: 5.0.4
+transformations:
+- name: router_task
+  sites:
+  - name: local
+    pfn: /Users/swagatranjit/Music/Research/workflow-dynamic-conditional-example/router.py
+    type: stageable
+    arch: aarch64
+    os.type: linux
+- name: branch_task
+  sites:
+  - name: local
+    pfn: /Users/swagatranjit/Music/Research/workflow-dynamic-conditional-example/branch_worker.py
+    type: stageable
+    arch: aarch64
+    os.type: linux

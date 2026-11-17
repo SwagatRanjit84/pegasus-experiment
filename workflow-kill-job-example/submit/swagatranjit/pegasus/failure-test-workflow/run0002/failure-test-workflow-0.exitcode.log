@@ -1,0 +1,7 @@
+{"name": ".//00/00/create_dir_failure-test-workflow_0_local.out", "timestamp": "2026-11-17T07:12:08.078176", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_worker_local_failure-test-workflow_0_local.out", "timestamp": "2026-11-17T07:12:22.400794", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_remote_local_0_0.out", "timestamp": "2026-11-17T07:12:37.775669", "exitcode": 0, "app_exitcode": 0, "retry": 0, "job_retry": 0, "std_out": "", "std_err": ""}
+{"name": ".//00/00/stage_in_local_local_0_0.out", "timestamp": "2026-11-17T07:19:58.340353", "exitcode": 1, "app_exitcode": 1, "retry": 0, "job_retry": 0, "std_out": "", "std_err": "dagman reported non-zero exitcode: 1\n "}
+{"name": ".//00/00/stage_in_local_local_0_0.out", "timestamp": "2026-11-17T07:25:37.845090", "exitcode": 1, "app_exitcode": -1002, "retry": 1, "job_retry": 1, "std_out": "", "std_err": "dagman reported non-zero exitcode: -1002\n "}
+{"name": ".//00/00/stage_in_local_local_0_0.out", "timestamp": "2026-11-17T07:34:42.231890", "exitcode": 1, "app_exitcode": 1, "retry": 2, "job_retry": 0, "std_out": "", "std_err": "dagman reported non-zero exitcode: 1\n "}
+{"name": ".//00/00/stage_in_local_local_0_0.out", "timestamp": "2026-11-17T07:42:07.776300", "exitcode": 1, "app_exitcode": 1, "retry": 3, "job_retry": 1, "std_out": "", "std_err": "dagman reported non-zero exitcode: 1\n "}

@@ -1,0 +1,13 @@
+x-pegasus:
+  apiLang: python
+  createdBy: swagatranjit
+  createdOn: 11-16-26T14:55:04Z
+pegasus: 5.0.4
+transformations:
+- name: data_processor
+  sites:
+  - name: local
+    pfn: /Users/swagatranjit/Music/Research/workflow-loop-example/processor.py
+    type: stageable
+    arch: aarch64
+    os.type: linux

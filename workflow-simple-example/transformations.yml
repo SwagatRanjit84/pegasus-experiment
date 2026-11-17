@@ -1,0 +1,13 @@
+x-pegasus:
+  apiLang: python
+  createdBy: swagatranjit
+  createdOn: 11-16-26T09:05:29Z
+pegasus: 5.0.4
+transformations:
+- name: echo
+  sites:
+  - name: local
+    pfn: /bin/echo
+    type: installed
+    arch: aarch64
+    os.type: linux

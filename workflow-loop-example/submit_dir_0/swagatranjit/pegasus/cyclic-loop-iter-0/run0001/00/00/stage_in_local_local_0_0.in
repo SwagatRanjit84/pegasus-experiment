@@ -1,0 +1,13 @@
+[
+ { "type": "transfer",
+   "linkage": "input",
+   "lfn": "input_data.txt",
+   "id": 1,
+   "generate_checksum": true,
+   "src_urls": [
+     { "site_label": "local", "url": "/Users/swagatranjit/Music/Research/workflow-loop-example/input_data.txt", "priority": 10 }
+   ],
+   "dest_urls": [
+     { "site_label": "local", "url": "file:///Users/swagatranjit/Music/Research/workflow-loop-example/wf-scratch/LOCAL/swagatranjit/pegasus/cyclic-loop-iter-0/run0001/./input_data.txt" }
+   ] }
+]
