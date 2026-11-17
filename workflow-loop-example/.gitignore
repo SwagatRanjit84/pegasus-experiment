@@ -1,0 +1,36 @@
+# Pegasus submit and execution directories
+submit/
+work/
+scratch/
+output/
+outputs/
+results/
+
+# Generated Pegasus workflow & catalog files (if built by a script)
+workflow.yml
+workflow.yaml
+*.dax
+sites.yml
+sites.xml
+tc.txt
+tc.yml
+rc.txt
+rc.yml
+pegasus.properties
+
+# Pegasus database & monitoring logs
+*.db
+*.log
+monitord.log*
+braindump.txt
+jobstate.log
+
+# Python API & virtual environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+ENV/
+.env
+.ipynb_checkpoints/
